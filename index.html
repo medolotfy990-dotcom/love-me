@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سؤال مهم جداً 🤍</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff4d6d;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            height: 60px;
+            align-items: center;
+        }
+        button {
+            padding: 12px 35px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        #yesBtn:hover {
+            background-color: #ff758f;
+            transform: scale(1.1);
+        }
+        #noBtn {
+            background-color: #6c757d;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>بتحبيني؟ 🥺❤️</h1>
+        <div class="buttons">
+            <button id="yesBtn" onclick="nextPage()">نعم</button>
+            <button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">لا</button>
+        </div>
+    </div>
+
+    <script>
+        // دالة تخلي زرار "لا" يهرب بشكل عشوائي في الشاشة
+        function moveButton() {
+            const noBtn = document.getElementById('noBtn');
+            // حساب أبعاد الشاشة المتاحة للحركة عشان الزرار ما يخرجش بره
+            const x = Math.random() * (window.innerWidth - noBtn.offsetWidth - 50);
+            const y = Math.random() * (window.innerHeight - noBtn.offsetHeight - 50);
+            
+            noBtn.style.left = x + 'px';
+            noBtn.style.top = y + 'px';
+        }
+
+        // دالة الانتقال لصفحة "نعم"
+        function nextPage() {
+            // هنا هنحط لينك الصفحة الثانية لما ترفعها
+            window.location.href = "love.html"; 
+        }
+    </script>
+
+</body>
+</html>
+<html>
+
+</html><html>
+
+</html><html>
+
+</html>
